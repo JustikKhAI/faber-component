@@ -1,0 +1,114 @@
+#shops {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   user-select: none;
+   padding: var(--spacing-large) 0;
+}
+.shops-container {
+   padding: 10px 20px;
+   width: 1200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   gap: var(--spacing-large);
+}
+.shops__title {
+   color: var(--color-corp);
+   font-size: 48px;
+   line-height: 1.5;
+   font-weight: 700;
+   text-align: center;
+}
+.shops-block {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+   color: var(--color-white);
+}
+.shops-item {
+   position: relative;
+   width: 275px;
+   height: 350px;
+   border-radius: var(--border-radius-small);
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 10px 30px;
+}
+.shop-1 {
+}
+.shops-item__title {
+   font-size: 30px;
+   line-height: 1.5;
+   letter-spacing: 1.5px;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: var(--spacing-large);
+}
+.shops-item__title.bro-shop-title {
+   margin-bottom: 0;
+}
+.shops-item__subtitle {
+   margin-bottom: var(--spacing-small);
+   font-size: 10px;
+   line-height: 1.5;
+   font-weight: 500;
+   font-style: italic;
+   height: 20px;
+   vertical-align: top;
+}
+.shops-item__address {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.5;
+   margin-bottom: 50px;
+}
+.shops-item__schedule {
+   text-align: center;
+   /* height: 65px; */
+   margin-bottom: 45px;
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 1.5;
+   font-style: italic;
+}
+.shops-item__schedule:before, .shops-item__schedule::after{
+   content: "------------------------------";
+   color:var(--color-corp);
+   letter-spacing: -2px;
+   font-weight: 700;
+   line-height: 1;
+
+}
+.shops-item__time {
+}
+.shops-item__shema {
+}
+.shops-item__phone {
+   align-self: stretch;
+   text-align: center;
+   margin: 0 10px 32px;
+   padding: 2px auto;
+   background-color: var(--color-corp);
+   color: var(--color-white);
+   font-size: 17px;
+   font-weight: 900;
+   line-height: 1.5;
+   border-radius: var(--border-radius-medium);
+}
+.shops-item__img {
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+   width: 275px;
+   height: 350px;
+}
+.shop-2 {
+}
+.shop-3 {
+}
+.shop-4 {
+}

@@ -1,0 +1,13 @@
+counter,type,season,price,action,articul,img,s37,s38,s39,s40,s41,s42,s43,s44,s45
+1,Classic,Summer,300,250,A-432751,"""https://i.ibb.co/QJfqs4K/1.jpg""",y,n,y,y,y,n,n,n,n
+2,Comfort,Autumn,500,500,A-432752,"""https://i.ibb.co/pKrG5ZJ/2.jpg""",n,n,n,y,y,y,n,n,n
+3,Women,Demi,1200,1200,A-432753,"""https://i.ibb.co/NnvcYhR/3.jpg""",y,n,y,n,y,n,y,n,y
+4,Classic,Winter,1150,1150,A-432754,"""https://i.ibb.co/4Tg91WL/4.jpg""",n,y,n,y,n,y,n,y,n
+5,Comfort,Summer,2800,2800,A-432755,"""https://i.ibb.co/MC7sy1F/5.jpg""",n,y,y,y,n,y,n,n,n
+6,Women,Autumn,1500,1450,A-432756,"""https://i.ibb.co/qNBWPb0/6.jpg""",n,n,y,n,y,y,n,n,n
+7,Classic,Demi,1900,1800,A-432757,"""https://i.ibb.co/WH1h2wV/7.jpg""",n,y,n,y,n,y,n,y,n
+8,Comfort,Winter,9999,9998,A-432758,"""https://i.ibb.co/2cBg9g9/8.jpg""",y,n,y,n,y,n,y,n,y
+9,Women,Summer,7541,7541,A-432759,"""https://i.ibb.co/wKxFRM8/9.jpg""",n,n,y,y,y,n,n,y,n
+10,Classic,Autumn,3210,3210,A-432760,"""https://i.ibb.co/30qJcZX/10.jpg""",n,y,n,y,n,y,y,y,n
+11,Comfort,Demi,1230,1230,A-432761,"""https://i.ibb.co/QJfqs4K/1.jpg""",y,n,y,n,y,n,n,y,n
+12,Women,Winter,8520,8520,A-432762,"""https://i.ibb.co/pKrG5ZJ/2.jpg""",y,y,y,n,y,n,y,n,y
