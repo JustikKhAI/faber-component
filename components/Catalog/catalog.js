@@ -52,11 +52,7 @@ class Catalog {
 
 const catalogPage = new Catalog();
 
-const proxyUrl = "";//"https://cors-anywhere.herokuapp.com/";
-const url =
-   "https://drive.google.com/u/0/uc?id=1sz-my8sxFnmnKdDR2A5uF0JFJcYfQu-4&export=download";
-// Papa.parse("my-test-table-csv.csv", {
-Papa.parse(proxyUrl + url, {
+Papa.parse("my-test-table-csv.csv", {
    download: true,
    header: true,
    complete: function (results) {
@@ -65,4 +61,3 @@ Papa.parse(proxyUrl + url, {
       catalogPage.render();
    },
 });
-// export {catalogPage};
