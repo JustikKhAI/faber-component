@@ -26,6 +26,7 @@ class Product {
             <p class="c-item__type">${this.type}</p>
             <img class="c-item__img" src="${this.img}"/>
             <p class="c-item__season">${this.season}</p>
+            <div class="sizes-enable">${renderSizes(this.sizes)}</div>
             <p class="c-item__price">${getAction(this.price, this.action)}</p>
             
          </div>
@@ -51,13 +52,3 @@ class Catalog {
 }
 
 const catalogPage = new Catalog();
-
-Papa.parse("my-test-table-csv.csv", {
-   download: true,
-   header: true,
-   complete: function (results) {
-      // results.data contains the parsed CSV data
-      catalogPage.generateProducts(results.data);
-      catalogPage.render();
-   },
-});

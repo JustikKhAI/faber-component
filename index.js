@@ -12,13 +12,10 @@ function handlerFunction() {
 }
 
 document.addEventListener("DOMContentLoaded", handlerFunction);
-
-
-
 render();
-
 window.addEventListener("load", function () {
    // Код для виконання після повного завантаження сторінки
    document.removeEventListener("DOMContentLoaded", handlerFunction);
    spinnerPage.handleClear();
+   
 });

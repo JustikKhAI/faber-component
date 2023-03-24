@@ -37,17 +37,7 @@ const SHOPS_LINK_PHONE_KYIV = "tel:+380677611741";
 const SHOPS_LINK_PHONE_BORYSPIL = "tel:+380987727734";
 const SHOPS_LINK_PHONE_ODESA = "tel:+380992526307";
 
-function getPhone(phone) {
-   const result =
-      phone.substr(7, 3) +
-      " " +
-      phone.substr(10, 3) +
-      "-" +
-      phone.substr(13, 2) +
-      "-" +
-      phone.substr(15, 2);
-   return result;
-}
+
 
 
 // SPINNER MEDIA LINKS
@@ -59,9 +49,3 @@ const SPINNER_IMG800PX = "img/spinner/spinner800px.svg";
 // CATALOG MEDIA LINKS
 
 
-function getAction(price, action) {
-   if (action < price) {
-      return action;
-   }
-   return price;
-}
