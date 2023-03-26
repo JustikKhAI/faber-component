@@ -15,6 +15,11 @@ const HEADER_CTLG_IMG = "img/header/catalogImg.svg";
 const HEADER_FACEBOOK = "img/header/facebook.svg";
 const HEADER_INSTAGRAM = "img/header/instagram.svg";
 
+const HEADER_MOB_CATALOG = "img/header/burger.png";
+const HEADER_MOB_TAB_GUARANTEE = "img/header/guarantee.png";
+const HEADER_MOB_TAB_SHOPS = "img/header/shop.png";
+const HEADER_MOB_TAB_CONTACTS = "img/header/ccall.png";
+
 // MAIN MEDIA LINKS
 
 // const MAIN_BG_IMG = "img/main/bg-image.svg";
