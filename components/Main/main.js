@@ -10,6 +10,22 @@ class Main {
          "Сотні відгуків",
       ];
       this.mainBtn = "до каталогу";
+      // всі розміри фото додаю для оптимізації трафіка
+      this.chooseMainFoto = function (value) {
+         let result;
+         if (value >= 1200) {
+            result = MAIN_FOTO1200;
+         } else if (value >= 992) {
+            result = MAIN_FOTO992;
+         } else if (value >= 768) {
+            result = MAIN_FOTO768;
+         } else if (value >= 560) {
+            result = MAIN_FOTO560;
+         } else if (value >= 320) {
+            result = MAIN_FOTO320;
+         }
+         return result;
+      }
    }
 
    render() {
@@ -30,7 +46,7 @@ class Main {
                </ul>
                <a class="main-descr__btn" href="${LINK_TO_CTLG}">${mainPage.mainBtn}</a>
             </div>
-            <img class="main-foto__img" src="${MAIN_FOTO}"/>
+            <img class="main-foto__img" src="${mainPage.chooseMainFoto(window.innerWidth)}"/>
          </div>
       `;
       ROOT_MAIN.innerHTML = html;

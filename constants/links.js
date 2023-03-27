@@ -23,7 +23,13 @@ const HEADER_MOB_TAB_CONTACTS = "img/header/ccall.png";
 // MAIN MEDIA LINKS
 
 // const MAIN_BG_IMG = "img/main/bg-image.svg";
-const MAIN_FOTO = "img/main/main_foto.png";
+const MAIN_FOTO1200 = "img/main/main-foto1200.jpg";
+const MAIN_FOTO992 = "img/main/main-foto992.jpg";
+const MAIN_FOTO768 = "img/main/main-foto768.jpg";
+const MAIN_FOTO560 = "img/main/main-foto560.jpg";
+const MAIN_FOTO320 = "img/main/main-foto320.jpg";
+const MAIN_FOTO_MIN = "img/main/main-foto-min.jpg"
+
 
 // GUARANTEE MEDIA LINKS
 
