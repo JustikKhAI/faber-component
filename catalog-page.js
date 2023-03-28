@@ -25,3 +25,8 @@ window.addEventListener("load", function () {
    spinnerPage.handleClear();
    
 });
+window.addEventListener("resize", function () {
+   headerPage.render();
+   catalogPage.render();
+   contactsPage.render();
+});

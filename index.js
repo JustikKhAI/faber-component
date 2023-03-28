@@ -19,3 +19,10 @@ window.addEventListener("load", function () {
    spinnerPage.handleClear();
    
 });
+window.addEventListener("resize", function () {
+   headerPage.render();
+   mainPage.render();
+   guaranteePage.render();
+   shopsPage.render();
+   contactsPage.render();
+});
