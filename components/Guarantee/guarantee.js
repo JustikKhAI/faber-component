@@ -92,7 +92,9 @@ class Guarantee {
                   <p class="g-repare-foto__text">
                      ${guaranteePage.gRepareFotoText}
                   </p>
-                  <img class="g-repare-foto__img" src="${GUARANTEE_REPARE_FOTO}"/>
+                  <img class="g-repare-foto__img" src="${createWayFoto(
+                     GUARANTEE_REPARE_FOTO
+                  )}"/>
                </div>
             </div>
             <div class="guarantee-service">
@@ -100,57 +102,61 @@ class Guarantee {
                   <p class="g-service-foto__text">
                      ${guaranteePage.gServiceFotoText}
                   </p>
-                  <img class="g-service-foto__img" src="${GUARANTEE_SERVICE_FOTO}"/>
+                  <img class="g-service-foto__img" src="${createWayFoto(
+                     GUARANTEE_SERVICE_FOTO
+                  )}"/>
                </div>
                <p class="g__title">
                   ${guaranteePage.gServiceTitle}
                </p>
-               <div class="g-service-price">
-                  <p class="g-service-price__title">
-                     ${guaranteePage.gService500Title}
-                  </p>
-                  <ul class="g-service-price__list">
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[0]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[1]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[2]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[3]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[4]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService500List[5]}
-                     </li>
-                  </ul>
-               </div>
-               <div class="g-service-price">
-                  <p class="g-service-price__title">
-                     ${guaranteePage.gService900Title}
-                  </p>
-                  <ul class="g-service-price__list">
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService900List[0]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService900List[1]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService900List[2]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService900List[3]}
-                     </li>
-                     <li class="g-service-price__item">
-                        ${guaranteePage.gService900List[4]}
-                     </li>
-                  </ul>
+               <div class="g-service-block">
+                  <div class="g-service-price gs-500__block">
+                     <p class="g-service-price__title">
+                        ${guaranteePage.gService500Title}
+                     </p>
+                     <ul class="g-service-price__list">
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[0]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[1]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[2]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[3]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[4]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService500List[5]}
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="g-service-price">
+                     <p class="g-service-price__title">
+                        ${guaranteePage.gService900Title}
+                     </p>
+                     <ul class="g-service-price__list">
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService900List[0]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService900List[1]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService900List[2]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService900List[3]}
+                        </li>
+                        <li class="g-service-price__item">
+                           ${guaranteePage.gService900List[4]}
+                        </li>
+                     </ul>
+                  </div>
                </div>
             </div>
          </div>

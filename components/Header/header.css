@@ -13,7 +13,7 @@
    justify-content: space-between;
    align-items: stretch;
 }
-.header-logo__box{
+.header-logo__box {
    height: calc(100% - 10px);
    margin: 5px 0;
    cursor: pointer;
@@ -79,7 +79,6 @@
 
 .header-catalog__mob {
    height: calc(var(--hh5) - 10px);
-   
 }
 .header-catalog__tab {
    text-transform: uppercase;
@@ -138,7 +137,10 @@
       height: var(--hh5);
       align-items: center;
    }
+   .header-mob-tab__item{
+      padding: 5px;
+   }
    .header-mob-tab__img {
-   max-height: 20px;
-}
+      max-height: 30px;
+   }
 }

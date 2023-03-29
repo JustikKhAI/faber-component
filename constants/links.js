@@ -23,18 +23,14 @@ const HEADER_MOB_TAB_CONTACTS = "img/header/ccall.png";
 // MAIN MEDIA LINKS
 
 // const MAIN_BG_IMG = "img/main/bg-image.svg";
-const MAIN_FOTO1200 = "img/main/main-foto1200.jpg";
-const MAIN_FOTO992 = "img/main/main-foto992.jpg";
-const MAIN_FOTO768 = "img/main/main-foto768.jpg";
-const MAIN_FOTO560 = "img/main/main-foto560.jpg";
-const MAIN_FOTO320 = "img/main/main-foto320.jpg";
-const MAIN_FOTO_MIN = "img/main/main-foto-min.jpg"
+
+const MAIN_FOTO = "img/main/main-foto.jpg";
 
 
 // GUARANTEE MEDIA LINKS
 
-const GUARANTEE_REPARE_FOTO = "img/guarantee/repare-foto.png";
-const GUARANTEE_SERVICE_FOTO = "img/guarantee/service-foto.png";
+const GUARANTEE_REPARE_FOTO = "img/guarantee/repare-foto.jpg";
+const GUARANTEE_SERVICE_FOTO = "img/guarantee/service-foto.jpg";
 
 // SHOPS MEDIA LINKS
 

@@ -46,7 +46,7 @@ class Main {
                </ul>
                <a class="main-descr__btn" href="${LINK_TO_CTLG}">${mainPage.mainBtn}</a>
             </div>
-            <img class="main-foto__img" src="${mainPage.chooseMainFoto(window.innerWidth)}"/>
+            <img class="main-foto__img" src="${createWayFoto(MAIN_FOTO)}"/>
          </div>
       `;
       ROOT_MAIN.innerHTML = html;

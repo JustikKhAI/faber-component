@@ -5,8 +5,8 @@ class Shops {
       this.broSubtitle = "роздрібний магазин при виробництві";
       this.shopsAddress = [
          "вул. Героїв України, 5/1",
-         "вул. Крайня, 1, ТК «Альтаїр»",
-         "ТРЦ «Аеромол», 1 поверх",
+         "вул. Крайня, 1: ТК «Альтаїр»",
+         "ТРЦ «Аеромол»: 1 поверх",
          "вул. Рішельєвська, 48",
       ];
       this.shopsSchedule = [
@@ -56,7 +56,7 @@ class Shops {
                   <p class="shops-item__title">
                      ${shopsPage.shopsCity[1]}
                   </p>
-                  <p class="shops-item__address">
+                  <p class="shop-address-2 shops-item__address">
                      ${shopsPage.shopsAddress[1]}
                   </p>
                   <div class="shops-item__schedule">
@@ -76,7 +76,7 @@ class Shops {
                   <p class="shops-item__title">
                      ${shopsPage.shopsCity[2]}
                   </p>
-                  <p class="shops-item__address">
+                  <p class="shop-address-3 shops-item__address">
                      ${shopsPage.shopsAddress[2]}
                   </p>
                   <div class="shops-item__schedule">
