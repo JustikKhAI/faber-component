@@ -43,6 +43,12 @@
    justify-content: center;
    align-items: center;
 }
+.header__item:not(:last-child):hover, .header-socials__item:hover{
+   border: none;
+   outline: 1px groove #111;
+   background:linear-gradient(90deg, rgba(0,0,0,0.2) 0 5%, transparent 20% 80%, rgba(0,0,0,0.2) 95% 100%);
+   transform: scale(1.1);
+}
 .header__item span {
    font-family: Montserrat, sans-serif;
    font-size: 18px;
