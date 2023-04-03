@@ -60,10 +60,10 @@ class Product {
             <p class="c-item__color"><span>Колір: </span>${this.color}</p>
             <p class="c-item__season"><span>Сезон: </span>${this.season}</p>
             <p class="c-item__outside"><span>Матеріал верху: </span>${
-               this.outside
+               this.outside.toLowerCase()
             }</p>
             <p class="c-item__inside"><span>Матеріал в середині: </span>${
-               this.inside
+               this.inside.toLowerCase()
             }</p>
             <div class="c-item__size">${this.sexSizes()}</div>
             <div class="c-item-price__block">

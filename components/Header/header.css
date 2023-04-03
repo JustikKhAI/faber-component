@@ -50,9 +50,10 @@
 .header__item:not(:last-child):hover, .header-socials__item:hover{
    background-color: var(--color-white);
 box-sizing: border-box;
-   border: 1px solid #111;
+   /* border: 1px solid #111; */
+   border: 1px solid transparent;
    background:linear-gradient(90deg, #ddd 0 5%, #fefefe 20% 80%, #ddd 95% 100%);
-   transform: scale(1.1);
+   /* transform: scale(1.1); */
 }
 .header__item span {
    font-family: Montserrat, sans-serif;

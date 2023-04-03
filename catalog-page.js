@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
 });
 window.addEventListener("resize", function () {
    headerPage.render();
-   catalogPage.render();
+   // catalogPage.render();
    contactsPage.render();
 });
 ROOT_CAT_FILTER.addEventListener("click", filterHandler);

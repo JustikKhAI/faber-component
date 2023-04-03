@@ -1,11 +1,11 @@
 #filter{
    display: flex;
    justify-content: center;
-   background-color: var(--color-corp);
+   background-color: var(--color-white);
    user-select: none;
    cursor: pointer;
-   border-bottom: 2px solid var(--color-corp);
-   border-top: 2px solid var(--color-corp);
+   /* border-bottom: 2px solid var(--color-corp); */
+   border-top: 2px solid var(--color-header-border);
 
 }
 .filter-block {
@@ -14,8 +14,13 @@
    width: 1200px;
    padding: 0 20px;
    align-items: stretch;
+   margin-top: 20px;
+
 }
 .filter-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
 }
 .filter-item {
    display: flex;
@@ -25,18 +30,24 @@
 }
 .filter-item li{
    flex: 1 1 auto;
-   border: 1px solid var(--color-header-border);
+   border: 2px solid transparent;
    font-size: 18px;
    line-height: 1.5;
    padding: 10px;
    text-align: center;
-   font-weight: 400;
+   font-weight: 500;
+   background-color: var(--color-guarantee-summary);
+   border-radius: 20px;
+}
+.filter-item li:not(:last-child){
+   margin-right: 10px;
 }
 .filter-item li:hover{
-   border:1px solid var(--color-corp);
+   border:2px solid var(--color-corp);
 }
 .sex-filter {
    text-transform: uppercase;
+   margin-bottom: 10px;
 }
 .season-filter{
    text-transform: lowercase;
@@ -44,10 +55,10 @@
 .season-filter::first-letter{
    text-transform: uppercase;
 }
-.filter2-container {
-}
+
 li.active-filter{
-   background-color: var(--color-guarantee-summary);
-   font-weight: 500;
+   background-color: var(--color-corp);
+   font-weight: 700;
+   color: var(--color-white);
 
 }
