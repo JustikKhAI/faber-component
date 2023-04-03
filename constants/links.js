@@ -54,5 +54,6 @@ const SHOPS_LINK_PHONE_ODESA = "tel:+380992526307";
 const SPINNER_IMG800PX = "img/spinner/spinner800px.svg";
 
 // CATALOG MEDIA LINKS
-
+const CATALOG_COPY = "img/catalog/copy.svg";
+const CATALOG_PRICE_OVERLINE = "img/catalog/catalog-price-overline.svg";
 

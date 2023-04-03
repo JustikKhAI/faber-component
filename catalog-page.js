@@ -1,6 +1,7 @@
 function render() {
    headerPage.render();
-   Papa.parse("my-test-table-csv.csv", {
+   filterPage.render();
+   Papa.parse("price-var.csv", {
       download: true,
       header: true,
       complete: function (results) {
@@ -12,16 +13,17 @@ function render() {
    contactsPage.render();
 }
 
-function handlerFunction() {
+function spinnerHandle() {
    // Код для виконання перед завантаженням сторінки
    spinnerPage.render();
 }
 
-document.addEventListener("DOMContentLoaded", handlerFunction);
+document.addEventListener("DOMContentLoaded", spinnerHandle);
 render();
+
 window.addEventListener("load", function () {
    // Код для виконання після повного завантаження сторінки
-   document.removeEventListener("DOMContentLoaded", handlerFunction);
+   document.removeEventListener("DOMContentLoaded", spinnerHandle);
    spinnerPage.handleClear();
    
 });
@@ -30,3 +32,4 @@ window.addEventListener("resize", function () {
    catalogPage.render();
    contactsPage.render();
 });
+ROOT_CAT_FILTER.addEventListener("click", filterHandler);

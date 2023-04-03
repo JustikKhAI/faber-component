@@ -44,10 +44,9 @@
    text-transform: uppercase;
    margin-bottom: var(--spacing-large);
 }
-.shops-item__title.bro-shop-title {
-   margin-bottom: 5px;
-}
+
 .shops-item__subtitle {
+   display: none;
    margin-bottom: var(--spacing-small);
    font-size: 10px;
    line-height: 1.5;
@@ -66,7 +65,6 @@
 
 .shops-item__schedule {
    text-align: center;
-   /* height: 65px; */
    margin-bottom: 45px;
    font-size: 14px;
    font-weight: 500;
@@ -189,46 +187,49 @@
       width: 100vw;
       padding: var(--spacing-medium) 5px;
    }
-   .shops__title{
+   .shops__title {
       font-size: 24px;
    }
-   .shops-block{
-      flex-wrap: wrap;
+   .shops-block {
+      display: grid;
+      max-width: 100%;
+      height: 120vw;
+      grid-template-columns: 5fr 5fr;
+      grid-template-rows: 6fr 6fr;
+      grid-gap: 5px;
    }
    .shops-item {
-      width: 48%;
-      padding: 20px 5px;
-      margin-bottom: 15px;
-      height: auto;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: calc((50vw / 100) * 12) 0;
+      justify-content: space-between;
    }
    .shops-item__title {
+      margin: 0;
       line-height: 1;
       letter-spacing: 0.5px;
-      font-size: 18px;
-   }
-   .shops-item__subtitle {
-      font-size: 6px;
-      line-height: 1;
-      height: 10px;
-      margin-bottom: 15px;
+      font-size: calc((50vw / 100) * 12);
    }
    .shops-item__address {
-      height: 12px;
-      margin-bottom: 26px;
-      font-size: 8px;
+      margin: 0;
+
+      height: calc((50vw / 100) * 8);
+      font-size: calc((50vw / 100) * 6);
    }
    .shop-address-2.shops-item__address {
-      padding: 0 35px;
+      padding: 0;
    }
    .shop-address-3.shops-item__address {
-      padding: 0 30px;
+      padding: 0;
    }
    .shops-item__schedule {
-      font-size: 10px;
-      margin-bottom: 35px;
+      font-size: calc((50vw / 100) * 6);
+      margin: 0;
    }
    .shops-item__phone {
-      font-size: 12px;
-      margin-bottom: 10px;
+      font-size: calc((50vw / 100) * 8);
+      margin: 0 5px;
+      padding: 0;
    }
 }

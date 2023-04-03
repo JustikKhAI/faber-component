@@ -10,32 +10,32 @@ function getPhone(phone) {
    return result;
 }
 
-function getAction(price, action) {
-   if (action < price) {
-      return action;
+function getActionSale(price, sale) {
+   if (sale != 0 && sale < price) {
+      return "action-enabled";
+      // result[1] = "img-visible";
+      // result[2] = "price-inactive";
+   } else {
+      return "action-disabled";
+      // result[1] = "img-invisible";
+      // result[2] = "price-active";
    }
-   return price;
 }
-
-function renderSizes(sizes) {
-   const sizesWithCount = [];
-
-   // Підраховуємо кількість одиниць в кожному розмірі
-   for (const size in sizes) {
-      const count = sizes[size];
-      if (count > 1) {
-         sizesWithCount.push({ size, count });
-      }
+function getActionImg(price, sale) {
+   if (sale != 0 && sale < price) {
+      return "img-visible";
+      // result[2] = "price-inactive";
+   } else {
+      return "img-invisible";
+      // result[2] = "price-active";
    }
-
-   // Рендеримо квадратик з текстом розміру, якщо їх більше однієї
-   const sizeElements = sizesWithCount
-      .map(({ size, count }) => {
-         return `<p class="size">${size}</p>`;
-      })
-      .join("");
-   /*(${count})*/
-   return sizeElements;
+}
+function getActionPrice(price, sale) {
+   if (sale != 0 && sale < price) {
+      return "price-inactive";
+   } else {
+      return "price-active";
+   }
 }
 
 function createWayFoto(basicWay) {

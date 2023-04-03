@@ -30,11 +30,8 @@ class Shops {
             </p>
             <div class="shops-block">
                <div class="shops-item shop-1">
-                  <p class="shops-item__title bro-shop-title">
+                  <p class="shops-item__title">
                      ${shopsPage.shopsCity[0]}
-                  </p>
-                  <p class="shops-item__subtitle">
-                     ${shopsPage.broSubtitle}
                   </p>
                   <p class="shops-item__address">
                      ${shopsPage.shopsAddress[0]}
