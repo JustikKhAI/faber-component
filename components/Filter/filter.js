@@ -26,10 +26,10 @@ class Filter {
          </div>
          <div class="filter2-container">
             <ul class="filter-item">
-               <li id="${this.idsArr2[0]}" class="season-filter">${this.seasonText[0]}</li>
-               <li id="${this.idsArr2[1]}" class="season-filter">${this.seasonText[1]}</li>
-               <li id="${this.idsArr2[2]}" class="season-filter">${this.seasonText[2]}</li>
-               <li id="${this.idsArr2[3]}" class="season-filter">${this.seasonText[3]}</li>
+               <li id="${this.idsArr2[0]}" class="season-filter">${this.seasonText[3]}</li>
+               <li id="${this.idsArr2[1]}" class="season-filter">${this.seasonText[2]}</li>
+               <li id="${this.idsArr2[2]}" class="season-filter">${this.seasonText[1]}</li>
+               <li id="${this.idsArr2[3]}" class="season-filter">${this.seasonText[0]}</li>
             </ul>
          </div>
       </div>
