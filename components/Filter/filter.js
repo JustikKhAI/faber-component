@@ -85,27 +85,3 @@ function filterHandler(event) {
       });
    }
 }
-// event.target.classList.toggle("active-filter");
-// if (event.target.classList.contains("active-filter")) {
-//    for (let i = 0; i < catalogPage.products.length; i++) {
-//       let tmp = document.getElementById(
-//          `prod-${catalogPage.products[i].articul}`
-//       );
-//       // console.log(tmp);
-//       // console.log(activeFilter.id);
-//       // console.log(catalogPage.products[i].sexClass());
-//       if (catalogPage.products[i].sexClass() == event.target.id) {
-//          tmp.classList.add("show-item");
-//          // console.log(tmp.classList);
-//       } else {
-//          tmp.classList.add("hide-item");
-//          // console.log(tmp.classList);
-//       }
-//    }
-// }
-// console.log(activeFilter);
-// console.log(catalogPage.products[0].seasonClass());
-// catalogPage.products.unshift(catalogPage.products.pop());
-
-// catalogPage.products = filterProducts;
-// return catalogPage.render();
