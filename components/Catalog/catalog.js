@@ -59,12 +59,8 @@ class Product {
             <p class="c-item__name">${this.name}</p>
             <p class="c-item__color"><span>Колір: </span>${this.color}</p>
             <p class="c-item__season"><span>Сезон: </span>${this.season}</p>
-            <p class="c-item__outside"><span>Матеріал верху: </span>${
-               this.outside.toLowerCase()
-            }</p>
-            <p class="c-item__inside"><span>Матеріал в середині: </span>${
-               this.inside.toLowerCase()
-            }</p>
+            <p class="c-item__outside"><span>Матеріал верху: </span>${this.outside.toLowerCase()}</p>
+            <p class="c-item__inside"><span>Матеріал в середині: </span>${this.inside.toLowerCase()}</p>
             <div class="c-item__size">${this.sexSizes()}</div>
             <div class="c-item-price__block">
                <p class="c-item__action ${getActionSale(
@@ -82,8 +78,10 @@ class Product {
                   )}">${this.price.toLocaleString("ru-RU")} ₴</p>
                </div>
             </div>
-            <div class="c-item__art">
-               <div class="art__text"><span>Артикул:</span>${this.articul}</div>
+            <div id="copy-articul${this.articul}" class="c-item__art">
+               <div class="art__text">
+                  <span>Артикул:</span>
+                  <textarea class="art__textarea">${this.articul}</textarea></div>
                <div class="art__button"><img class="art__img" src="${CATALOG_COPY}"/></div>            
             </div>
             
@@ -111,11 +109,23 @@ class Catalog {
 
 const catalogPage = new Catalog();
 
-// document
-//    .querySelector("div.filter-container")
-//    .addEventListener("click", (event) => {
-//       if (event.target.tagName !== "LI") return false;
+// function copyToClipboard(text) {
+//    // Створення тимчасового textarea елементу, який не буде відображуватися на сторінці
+//    const tempTextArea = document.createElement("textarea");
+//    tempTextArea.value = text;
+//    tempTextArea.style.position = "absolute";
+//    tempTextArea.style.left = "-9999px";
+//    document.body.appendChild(tempTextArea);
 
-//       let filterClass = event.target.dataset["f"];
-//       console.log(filterClass);
-//    });
+//    // Виділення тексту у textarea
+//    tempTextArea.select();
+
+//    // Копіювання виділеного тексту в буфер обміну
+//    document.execCommand("copy");
+
+//    // Видалення тимчасового textarea елементу
+//    document.body.removeChild(tempTextArea);
+// }
+
+
+
