@@ -49,45 +49,118 @@ class Product {
          return sizesCode;
       };
    }
+   buildProduct() {
+      let catalogItem = document.createElement("div");
+      catalogItem.classList.add(
+         "catalog-item",
+         this.sexClass(),
+         this.seasonClass()
+      );
+      catalogItem.id = "prod-" + this.articul;
 
-   render() {
-      const html = `
-         <div class="catalog-item ${this.sexClass()} ${this.seasonClass()}" id="prod-${
-         this.articul
-      }">
-            <img class="c-item__img" src="${this.img}"/>
-            <p class="c-item__name">${this.name}</p>
-            <p class="c-item__color"><span>Колір: </span>${this.color}</p>
-            <p class="c-item__season"><span>Сезон: </span>${this.season}</p>
-            <p class="c-item__outside"><span>Матеріал верху: </span>${this.outside.toLowerCase()}</p>
-            <p class="c-item__inside"><span>Матеріал в середині: </span>${this.inside.toLowerCase()}</p>
-            <div class="c-item__size">${this.sexSizes()}</div>
-            <div class="c-item-price__block">
-               <p class="c-item__action ${getActionSale(
-                  this.price,
-                  this.sale
-               )}">${this.sale.toLocaleString("ru-RU")} ₴</p>
-               <div class="c-item-price__elem">
-                  <img class="price-img ${getActionImg(
-                     this.price,
-                     this.sale
-                  )}" src="${CATALOG_PRICE_OVERLINE}"/>
-                  <p class="c-item__price ${getActionPrice(
-                     this.price,
-                     this.sale
-                  )}">${this.price.toLocaleString("ru-RU")} ₴</p>
-               </div>
-            </div>
-            <div id="copy-articul${this.articul}" class="c-item__art">
-               <div class="art__text">
-                  <span>Артикул:</span>
-                  <textarea class="art__textarea">${this.articul}</textarea></div>
-               <div class="art__button"><img class="art__img" src="${CATALOG_COPY}"/></div>            
-            </div>
-            
-         </div>
-      `;
-      return html;
+
+      let itemImg = document.createElement("img");
+      itemImg.className = "c-item__img";
+      itemImg.src = this.img;
+
+      let itemName = document.createElement("p");
+      itemName.className = "c-item__name";
+      itemName.innerText = this.name;
+
+      let itemColor = document.createElement("p");
+      itemColor.className = "c-item__color";
+      itemColor.innerHTML = `<span>Колір: </span>${this.color.toLowerCase()}`;
+
+      let itemSeason = document.createElement("p");
+      itemSeason.className = "c-item__season";
+      itemSeason.innerHTML = `<span>Сезон: </span>${this.season.toLowerCase()}`;
+
+      let itemOutside = document.createElement("p");
+      itemOutside.className = "c-item__outside";
+      itemOutside.innerHTML = `<span>Матеріал верху: </span>${this.outside.toLowerCase()}`;
+
+      let itemInside = document.createElement("p");
+      itemInside.className = "c-item__inside";
+      itemInside.innerHTML = `<span>Матеріал в середині: </span>${this.inside.toLowerCase()}`;
+
+      let itemSize = document.createElement("div");
+      itemSize.className = "c-item__size";
+      itemSize.innerHTML = this.sexSizes();
+
+      let itemPriceBlock = document.createElement("div");
+      itemPriceBlock.className = "c-item-price__block";
+      
+      let itemAction = document.createElement("p");
+      itemAction.classList.add(
+         "c-item__action",
+         getActionSale(this.price, this.sale)
+      );
+      itemAction.innerText = this.sale.toLocaleString("ru-RU") + " ₴";
+
+      let itemPriceElem = document.createElement("div");
+      itemPriceElem.className = "c-item-price__elem";
+
+      let itemPriceImg = document.createElement("img");
+      itemPriceImg.classList.add(
+         "price-img",
+         getActionImg(this.price, this.sale)
+      );
+      itemPriceImg.src = CATALOG_PRICE_OVERLINE;
+
+      let itemPrice = document.createElement("p");
+      itemPrice.classList.add(
+         "c-item__price",
+         getActionPrice(this.price, this.sale)
+      );
+      itemPrice.innerText = this.price.toLocaleString("ru-RU") + " ₴";
+
+      itemPriceElem.append(itemPriceImg, itemPrice);
+      itemPriceBlock.append(itemAction, itemPriceElem);
+
+      let itemArticul = document.createElement("div");
+      itemArticul.className = "c-item__art";
+
+      let itemArtText = document.createElement("div");
+      itemArtText.className = "art__text";
+      itemArtText.innerHTML = "<span>Артикул:</span>" + this.articul;
+
+      let itemArtButton = document.createElement("div");
+      itemArtButton.className = "art__button";
+      itemArtButton.addEventListener("click", async () => {
+         try {
+            // const text = this.articul;
+            await navigator.clipboard.writeText(this.articul);
+            itemArticul.classList.add('copied');
+            setTimeout(function () {
+            itemArticul.classList.remove("copied");
+               
+            },1500)
+            console.log("Текст був успішно скопійований в буфер обміну");
+         } catch (err) {
+            console.error("Помилка копіювання тексту в буфер обміну", err);
+         }
+      });
+
+      let itemArtBtnImg = document.createElement("img");
+      itemArtBtnImg.className = "art__img";
+      itemArtBtnImg.src = CATALOG_COPY;
+
+      itemArtButton.appendChild(itemArtBtnImg);
+      itemArticul.append(itemArtText, itemArtButton);
+
+      catalogItem.append(
+         itemImg,
+         itemName,
+         itemColor,
+         itemSeason,
+         itemOutside,
+         itemInside,
+         itemSize,
+         itemPriceBlock,
+         itemArticul
+      );
+      return catalogItem;
+
    }
 }
 
@@ -95,11 +168,18 @@ class Catalog {
    constructor() {
       this.products = [];
    }
-
+   // buildCatalog() {
+   //    this.products.forEach((product) => product.buildProduct());
+   // }
    render() {
-      const code = this.products.map((product) => product.render()).join("");
-      const html = `<div class="catalog-container">${code}</div>`;
-      ROOT_CATALOG.innerHTML = html;
+      const htmlCat = document.createElement("div");
+      htmlCat.className = "catalog-container";
+
+      this.products.forEach((product) => {
+         let tmp = product.buildProduct();
+         htmlCat.appendChild(tmp);
+      });
+      ROOT_CATALOG.appendChild(htmlCat);
    }
 
    generateProducts(data) {
@@ -108,24 +188,6 @@ class Catalog {
 }
 
 const catalogPage = new Catalog();
-
-// function copyToClipboard(text) {
-//    // Створення тимчасового textarea елементу, який не буде відображуватися на сторінці
-//    const tempTextArea = document.createElement("textarea");
-//    tempTextArea.value = text;
-//    tempTextArea.style.position = "absolute";
-//    tempTextArea.style.left = "-9999px";
-//    document.body.appendChild(tempTextArea);
-
-//    // Виділення тексту у textarea
-//    tempTextArea.select();
-
-//    // Копіювання виділеного тексту в буфер обміну
-//    document.execCommand("copy");
-
-//    // Видалення тимчасового textarea елементу
-//    document.body.removeChild(tempTextArea);
-// }
 
 
 

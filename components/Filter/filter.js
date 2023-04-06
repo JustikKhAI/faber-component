@@ -67,7 +67,6 @@ function filterHandler(event) {
             );
          }
       }
-
       catalogPage.products.map((item) => {
          let elem = document.getElementById(`prod-${item.articul}`);
          if (

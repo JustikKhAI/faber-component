@@ -13,7 +13,6 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
    grid-gap: 40px;
-   width: 80%;
    max-width: 1200px;
    margin: 10px auto;
 }
@@ -25,6 +24,7 @@
    background-color: var(--color-white);
    box-shadow: var(--shadow);
    border-radius: var(--border-radius-medium);
+   position: relative;
 }
 .show-item {
    display: initial;
@@ -161,6 +161,7 @@
 .art__text span {
    font-weight: 400;
    margin-right: 10px;
+
 }
 .art__textarea {
    border: none;
@@ -186,7 +187,20 @@
    padding: 11px;
    cursor: pointer;
 }
+.art__button:hover{
+   background-color: var(--color-corp-hover);
+}
 .art__img {
    height: 20px;
    width: 20px;
+   user-select: none;
+}
+
+.copied::before{
+   position: absolute;
+   font-size: 12px;
+   bottom: 0px;
+   left: 30px;
+   content: "Текст був успішно скопійований в буфер обміну";
+   z-index: 3;
 }
