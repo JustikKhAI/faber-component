@@ -26,7 +26,6 @@
    border-radius: var(--border-radius-medium);
    position: relative;
 }
-
 .show-item {
    display: initial;
 }
@@ -157,10 +156,30 @@
    font-weight: 600;
    line-height: 22px;
    flex: 1 1 auto;
+   border: 2px solid var(--color-corp);
 }
 .art__text span {
    font-weight: 400;
    margin-right: 10px;
+
+}
+.art__textarea {
+   border: none;
+   padding: 0;
+   margin: 0;
+   font-size: inherit;
+   font-family: inherit;
+   line-height: inherit;
+   background-color: transparent;
+   resize: none;
+   overflow: hidden;
+   vertical-align: middle;
+   color: inherit;
+   font-weight: 600;
+   height: 22px;
+   width: 100px;
+   user-select: none;
+   pointer-events: none;
 
 }
 .art__button {

@@ -58,6 +58,7 @@ class Product {
       );
       catalogItem.id = "prod-" + this.articul;
 
+
       let itemImg = document.createElement("img");
       itemImg.className = "c-item__img";
       itemImg.src = this.img;
@@ -159,6 +160,7 @@ class Product {
          itemArticul
       );
       return catalogItem;
+
    }
 }
 
@@ -186,5 +188,6 @@ class Catalog {
 }
 
 const catalogPage = new Catalog();
+
 
 

@@ -1,6 +1,7 @@
 function render() {
    headerPage.render();
    filterPage.render();
+   contactsPage.render();
    Papa.parse("price-var.csv", {
       download: true,
       header: true,
@@ -10,7 +11,7 @@ function render() {
          catalogPage.render();
       },
    });
-   contactsPage.render();
+   
 }
 
 function spinnerHandle() {
@@ -30,6 +31,6 @@ window.addEventListener("load", function () {
 window.addEventListener("resize", function () {
    headerPage.render();
    // catalogPage.render();
-   contactsPage.render();
+   // contactsPage.render();
 });
 ROOT_CAT_FILTER.addEventListener("click", filterHandler);
