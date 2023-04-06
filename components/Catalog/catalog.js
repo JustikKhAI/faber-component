@@ -56,7 +56,7 @@ class Product {
          this.sexClass(),
          this.seasonClass()
       );
-      catalogItem.id = "prod-" + this.articul;
+      catalogItem.id = `prod-${this.articul}`;
 
 
       let itemImg = document.createElement("img");
@@ -95,7 +95,7 @@ class Product {
          "c-item__action",
          getActionSale(this.price, this.sale)
       );
-      itemAction.innerText = this.sale.toLocaleString("ru-RU") + " ₴";
+      itemAction.innerText = `${this.sale.toLocaleString("ru-RU")} ₴`;
 
       let itemPriceElem = document.createElement("div");
       itemPriceElem.className = "c-item-price__elem";
@@ -112,7 +112,7 @@ class Product {
          "c-item__price",
          getActionPrice(this.price, this.sale)
       );
-      itemPrice.innerText = this.price.toLocaleString("ru-RU") + " ₴";
+      itemPrice.innerText = `${this.price.toLocaleString("ru-RU")} ₴`;
 
       itemPriceElem.append(itemPriceImg, itemPrice);
       itemPriceBlock.append(itemAction, itemPriceElem);
@@ -122,7 +122,7 @@ class Product {
 
       let itemArtText = document.createElement("div");
       itemArtText.className = "art__text";
-      itemArtText.innerHTML = "<span>Артикул:</span>" + this.articul;
+      itemArtText.innerHTML = `<span>Артикул: </span>${this.articul}`;
 
       let itemArtButton = document.createElement("div");
       itemArtButton.className = "art__button";
