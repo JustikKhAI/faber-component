@@ -4,6 +4,7 @@ function render() {
    guaranteePage.render();
    shopsPage.render();
    contactsPage.render();
+   footerPage.render();
 }
 
 function handlerFunction() {

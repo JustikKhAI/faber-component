@@ -91,7 +91,7 @@ const contactProduction = new Contact(
    "ВИРОБНИЦТВО",
    "м. Бровари",
    "вул. Героїв України, 5/1",
-   "Тільки термінові запитання",
+   "Тільки термінові питання",
    "з 9:00 до 18:00",
    CONTACTS_TG_IMG,
    getPhone(CONTACTS_LINK_PHONE_PRODUCTION) + ", Євген"

@@ -76,8 +76,8 @@
 }
 .g-condition-decline__title {
    color: var(--color-corp);
-   text-shadow: var(--shadow-guarantee);
-   font-weight: 700;
+   /* text-shadow: var(--shadow-guarantee); */
+   font-weight: 800;
    letter-spacing: -0.5%;
    margin-bottom: 10px;
 }
@@ -156,9 +156,9 @@
 }
 .g-service-price__title {
    color: var(--color-guarantee-price);
-   text-shadow: var(--shadow-guarantee-price);
+   /* text-shadow: var(--shadow-guarantee-price); */
    align-self: center;
-   font-weight: 900;
+   font-weight: 800;
    font-size: 18px;
    line-height: 1.5;
    margin: 10px;
@@ -225,9 +225,9 @@
    .g-condition-decline-container {
       margin-bottom: 10px;
    }
-.g-condition-container{
-   padding-bottom: 0;
-}
+   .g-condition-container {
+      padding-bottom: 0;
+   }
    .g-repare-foto {
       margin-bottom: 10px;
    }
@@ -243,7 +243,7 @@
       order: 1;
       margin-bottom: 10px;
    }
-   .g-service-foto__img{
+   .g-service-foto__img {
       width: 100%;
       height: 100%;
    }
@@ -345,7 +345,6 @@
    .repare-summary {
       margin-bottom: 10px;
       padding: 10px;
-
    }
    .g-summary__text {
       font-size: 16px;
@@ -379,7 +378,7 @@
       order: 1;
       margin-bottom: 10px;
    }
-   .g-service-foto__text{
+   .g-service-foto__text {
       font-size: 16px;
       padding: 10px;
    }
@@ -387,10 +386,10 @@
       margin-bottom: 10px;
       align-items: stretch;
    }
-   .g-service-price__title{
+   .g-service-price__title {
       font-size: 16px;
    }
-   .g-service-price__item{
+   .g-service-price__item {
       font-size: 16px;
    }
    .gs-500__block {

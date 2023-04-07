@@ -161,7 +161,6 @@
 .art__text span {
    font-weight: 400;
    margin-right: 10px;
-
 }
 .art__textarea {
    border: none;
@@ -180,14 +179,13 @@
    width: 100px;
    user-select: none;
    pointer-events: none;
-
 }
 .art__button {
    background-color: var(--color-corp);
    padding: 11px;
    cursor: pointer;
 }
-.art__button:hover{
+.art__button:hover {
    background-color: var(--color-corp-hover);
 }
 .art__img {
@@ -196,11 +194,29 @@
    user-select: none;
 }
 
-.copied::before{
+.copied::before {
    position: absolute;
-   font-size: 12px;
+   font-size: calc((50vw / 100) * 1.4);
    bottom: 0px;
    left: 30px;
    content: "Текст був успішно скопійований в буфер обміну";
    z-index: 3;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+   .catalog-container {
+      max-width: 992px;
+      grid-gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   }
+   .catalog-item {
+      padding: 20px 15px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+   
+}
+@media only screen and (min-width: 560px) and (max-width: 767.99px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 559.99px) {
 }

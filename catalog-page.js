@@ -1,7 +1,7 @@
 function render() {
    headerPage.render();
    filterPage.render();
-   contactsPage.render();
+   footerPage.render();
    Papa.parse("price-var.csv", {
       download: true,
       header: true,
@@ -11,7 +11,6 @@ function render() {
          catalogPage.render();
       },
    });
-   
 }
 
 function spinnerHandle() {
@@ -26,7 +25,6 @@ window.addEventListener("load", function () {
    // Код для виконання після повного завантаження сторінки
    document.removeEventListener("DOMContentLoaded", spinnerHandle);
    spinnerPage.handleClear();
-   
 });
 window.addEventListener("resize", function () {
    headerPage.render();

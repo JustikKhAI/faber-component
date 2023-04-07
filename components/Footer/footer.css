@@ -1,0 +1,47 @@
+#footer {
+   background-color: var(--color-corp);
+   display: flex;
+   justify-content: center;
+   height: 50px;
+}
+.hover-block {
+   display: none;
+}
+.footer-container {
+   padding: 0 20px;
+   width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.f-text-link {
+   color: var(--color-white);
+   font-weight: 500;
+   text-shadow: var(--shadow);
+}
+.footer-container > a:hover {
+   text-decoration: underline;
+   transform: scale(1.2);
+}
+.f-facebook-link,
+.f-insta-link {
+   box-sizing: border-box;
+   padding: 5px;
+   position: relative;
+   z-index: 0;
+}
+.show-qr {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   z-index: 1;
+   bottom: 50px;
+   right: 0;
+   border: 2px solid var(--color-corp);
+   border-radius: var(--border-radius-small);
+   background-color: var(--color-white);
+   width: 200px;
+   height: 200px;
+   box-shadow: var(--shadow);
+}

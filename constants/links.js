@@ -3,10 +3,11 @@ const LINK_TO_INDEX = "/index.html";
 const LINK_TO_CTLG = "/catalog-page.html";
 const LINK_TO_GUARANTEE = "/index.html#guarantee";
 const LINK_TO_SHOPS = "/index.html#shops";
-const LINK_TO_CONTACTS = "#contacts";
+const LINK_TO_CONTACTS = "/index.html#contacts";
 
-const LINK_TO_FACEBOOK = "#";
-const LINK_TO_INSTAGRAM = "#";
+const LINK_TO_FACEBOOK = "https://www.facebook.com/fabershoes";
+const LINK_TO_INSTAGRAM =
+   "https://instagram.com/faber.ukraine";
 
 // HEADER MEDIA LINKS
 
@@ -67,4 +68,9 @@ const SPINNER_IMG800PX = "img/spinner/spinner800px.svg";
 // CATALOG MEDIA LINKS
 const CATALOG_COPY = "img/catalog/copy.svg";
 const CATALOG_PRICE_OVERLINE = "img/catalog/catalog-price-overline.svg";
+
+// FOOTER MEDIA LINKS
+
+const FOOTER_FACEBOOK = "img/footer/facebook.svg";
+const FOOTER_INSTAGRAM = "img/footer/instagram.svg";
 
