@@ -81,12 +81,12 @@ class Header {
                   </a>
                </li>
                <li class="header__item header-socials">
-                  <a href="${LINK_TO_FACEBOOK}">
+                  <a href="${LINK_TO_FACEBOOK}" target="_blank">
                      <div class="header-socials__item">
                         <img src="${HEADER_FACEBOOK}"/>
                      </div>
                   </a>
-                  <a href="${LINK_TO_INSTAGRAM}">
+                  <a href="${LINK_TO_INSTAGRAM}" target="_blank">
                      <div class="header-socials__item">
                         <img src="${HEADER_INSTAGRAM}"/>
                      </div>
@@ -99,7 +99,7 @@ class Header {
                return this.desktop;
             } else if (value < 992 && value >= 560) {
                return this.tablet;
-            } else if (value < 560){
+            } else if (value < 560) {
                return this.mobile;
             }
          },

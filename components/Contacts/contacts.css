@@ -5,6 +5,7 @@
    align-items: center;
    background-color: var(--color-white);
    padding-top: 20px;
+   user-select: none;
 }
 .contacts-title {
    text-transform: uppercase;
@@ -61,6 +62,7 @@
    height: 45px;
    align-items: center;
 }
+
 .phone-img {
    margin-right: 10px;
    height: 25px;
@@ -71,6 +73,9 @@
    font-weight: 500;
    font-size: 15px;
    line-height: 1.5;
+}
+.phone-number:hover{
+   text-decoration: underline;
 }
 .production-tile .cont-item__shedule {
    font-weight: 700;
