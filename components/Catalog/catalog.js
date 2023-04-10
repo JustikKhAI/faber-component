@@ -124,29 +124,28 @@ class Product {
       itemArtText.className = "art__text";
       itemArtText.innerHTML = `<span>Артикул: </span>${this.articul}`;
 
-      let itemArtButton = document.createElement("div");
-      itemArtButton.className = "art__button";
-      itemArtButton.addEventListener("click", async () => {
-         try {
-            // const text = this.articul;
-            await navigator.clipboard.writeText(this.articul);
-            itemArticul.classList.add('copied');
-            setTimeout(function () {
-            itemArticul.classList.remove("copied");
+      // let itemArtButton = document.createElement("div");
+      // itemArtButton.className = "art__button";
+      // itemArtButton.onclick = (event) => {
+         
+      //       // const text = this.articul;
+      //       navigator.clipboard.writeText(this.articul);
+      //       itemArticul.classList.add('copied');
+      //       setTimeout(function () {
+      //       itemArticul.classList.remove("copied");
                
-            },1500)
-            console.log("Текст був успішно скопійований в буфер обміну");
-         } catch (err) {
-            console.error("Помилка копіювання тексту в буфер обміну", err);
-         }
-      });
+      //       },1500)
+      //       console.log("Текст був успішно скопійований в буфер обміну");
+         
+      // };
+
 
       let itemArtBtnImg = document.createElement("img");
       itemArtBtnImg.className = "art__img";
       itemArtBtnImg.src = CATALOG_COPY;
 
-      itemArtButton.appendChild(itemArtBtnImg);
-      itemArticul.append(itemArtText, itemArtButton);
+      // itemArtButton.appendChild(itemArtBtnImg);
+      itemArticul.append(itemArtText/*, itemArtButton*/);
 
       catalogItem.append(
          itemImg,

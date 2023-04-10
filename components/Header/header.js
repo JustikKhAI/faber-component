@@ -11,7 +11,9 @@ class Header {
       const sizeDependCode = {
          mobile: `
             <a href="${LINK_TO_CTLG}">
-                     <img class="header-catalog__mob" src ="${HEADER_MOB_CATALOG}"/>
+                     <p class="header-catalog__tab">
+                        ${headerPage.catalog.toUpperCase()}
+                     </p>
             </a>
             <ul class="header-mob-tab-menu">
                <li class="header-mob-tab__item">

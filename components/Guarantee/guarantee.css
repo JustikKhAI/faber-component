@@ -325,7 +325,7 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 559.99px) {
    .guarantee-container {
-      padding: 5px;
+      padding: 10px 5px 5px;
       max-width: 100%;
       flex-direction: column;
       justify-content: flex-start;
@@ -376,7 +376,7 @@
    }
    .g-service-foto {
       order: 1;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
    }
    .g-service-foto__text {
       font-size: 16px;

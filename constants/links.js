@@ -17,9 +17,9 @@ const HEADER_FACEBOOK = "img/header/facebook.svg";
 const HEADER_INSTAGRAM = "img/header/instagram.svg";
 
 const HEADER_MOB_CATALOG = "img/header/burger.png";
-const HEADER_MOB_TAB_GUARANTEE = "img/header/guarantee.png";
-const HEADER_MOB_TAB_SHOPS = "img/header/shop.png";
-const HEADER_MOB_TAB_CONTACTS = "img/header/ccall.png";
+const HEADER_MOB_TAB_GUARANTEE = "img/header/guarantee.svg";
+const HEADER_MOB_TAB_SHOPS = "img/header/shops.svg";
+const HEADER_MOB_TAB_CONTACTS = "img/header/contacts.svg";
 
 // MAIN MEDIA LINKS
 

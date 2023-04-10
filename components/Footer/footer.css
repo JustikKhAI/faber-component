@@ -45,3 +45,47 @@
    height: 200px;
    box-shadow: var(--shadow);
 }
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+   .f-text-link {
+      font-size: 14px;
+   }
+}
+@media only screen and (min-width: 560px) and (max-width: 767.99px) {
+   .f-text-link {
+      font-size: 14px;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 559.99px) {
+   #footer {
+      height: auto;
+   }
+   .footer-container {
+      position: relative;
+      padding: 0 5px;
+      min-width: 320px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+   }
+   .f-text-link {
+      font-size: 12px;
+      line-height: 2;
+   }
+   .f-facebook-link {
+      position: absolute;
+      top: 10px;
+      left: 15%;
+   }
+   .f-facebook-link .show-qr{
+      /* right: -150px; */
+      left: 0;
+   }
+   .f-insta-link{
+      position: absolute;
+      top: 10px;
+      right: 15%;
+   }
+}
