@@ -19,17 +19,17 @@ class Filter {
       <div class="filter-block">
          <div class="filter-container">
             <ul class="filter-item">
-               <li id="${this.idsArr1[0]}" class="sex-filter">${this.sexText[0]}</li>
-               <li id="${this.idsArr1[1]}" class="sex-filter">${this.sexText[1]}</li>
-               <li id="${this.idsArr1[2]}" class="sex-filter">${this.sexText[2]}</li>
+               <li id="${this.idsArr1[0]}" class="sex-filter hoverable">${this.sexText[0]}</li>
+               <li id="${this.idsArr1[1]}" class="sex-filter hoverable">${this.sexText[1]}</li>
+               <li id="${this.idsArr1[2]}" class="sex-filter hoverable">${this.sexText[2]}</li>
             </ul>
          </div>
          <div class="filter2-container">
             <ul class="filter-item">
-               <li id="${this.idsArr2[0]}" class="season-filter">${this.seasonText[0]}</li>
-               <li id="${this.idsArr2[1]}" class="season-filter">${this.seasonText[1]}</li>
-               <li id="${this.idsArr2[2]}" class="season-filter">${this.seasonText[2]}</li>
-               <li id="${this.idsArr2[3]}" class="season-filter">${this.seasonText[3]}</li>
+               <li id="${this.idsArr2[0]}" class="season-filter hoverable">${this.seasonText[0]}</li>
+               <li id="${this.idsArr2[1]}" class="season-filter hoverable">${this.seasonText[1]}</li>
+               <li id="${this.idsArr2[2]}" class="season-filter hoverable">${this.seasonText[2]}</li>
+               <li id="${this.idsArr2[3]}" class="season-filter hoverable">${this.seasonText[3]}</li>
             </ul>
          </div>
       </div>

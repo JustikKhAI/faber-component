@@ -38,7 +38,7 @@
 .filter-item li:not(:last-child) {
    margin-right: 10px;
 }
-.filter-item li:hover {
+.filter-item .hoverable:hover {
    border: 2px solid var(--color-corp);
 }
 .sex-filter {
