@@ -93,6 +93,10 @@
    letter-spacing: 1px;
    border-radius: var(--border-radius-medium);
 }
+#shops .hoverable:hover{
+   background-color: transparent;
+   background: linear-gradient(to bottom, var(--color-corp), rgb(0,108,110));
+}
 .shops-item__img {
    position: absolute;
    top: 0;

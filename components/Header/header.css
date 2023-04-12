@@ -43,16 +43,12 @@
    justify-content: center;
    align-items: center;
 }
-.header__item:not(:last-child),
-.header-socials__item {
+#header .hoverable {
    box-sizing: border-box;
-   /* transition: 0.1s; */
 }
-.header__item:not(:last-child):hover,
-.header-socials__item:hover {
+#header .hoverable:hover {
    background-color: var(--color-white);
    box-sizing: border-box;
-   /* border: 1px solid #111; */
    border: 1px solid transparent;
    background: linear-gradient(
       90deg,
@@ -60,7 +56,6 @@
       #fefefe 20% 80%,
       #ddd 95% 100%
    );
-   /* transform: scale(1.1); */
 }
 .header__item span {
    font-family: Montserrat, sans-serif;

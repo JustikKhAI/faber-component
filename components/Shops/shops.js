@@ -44,7 +44,7 @@ class Shops {
                         ${shopsPage.shopsSchedule[0].shema}
                      </p>
                   </div>
-                  <a class="shops-item__phone" href="${SHOPS_LINK_PHONE_BROVARY}">
+                  <a class="shops-item__phone hoverable" href="${SHOPS_LINK_PHONE_BROVARY}">
                      ${shopsPage.shopsPhone[0]}
                   </a>
                   <img class="shops-item__img" src="${SHOPS_BROVARY}"/>
@@ -64,7 +64,7 @@ class Shops {
                         ${shopsPage.shopsSchedule[1].shema}
                      </p>
                   </div>
-                  <a class="shops-item__phone" href="${SHOPS_LINK_PHONE_KYIV}">
+                  <a class="shops-item__phone hoverable" href="${SHOPS_LINK_PHONE_KYIV}">
                      ${shopsPage.shopsPhone[1]}
                   </a>
                   <img class="shops-item__img" src="${SHOPS_KYIV}"/>
@@ -84,7 +84,7 @@ class Shops {
                         ${shopsPage.shopsSchedule[2].shema}
                      </p>
                   </div>
-                  <a class="shops-item__phone" href="${SHOPS_LINK_PHONE_BORYSPIL}">
+                  <a class="shops-item__phone hoverable" href="${SHOPS_LINK_PHONE_BORYSPIL}">
                      ${shopsPage.shopsPhone[2]}
                   </a>
                   <img class="shops-item__img" src="${SHOPS_BORYSPIL}"/>
@@ -104,7 +104,7 @@ class Shops {
                         ${shopsPage.shopsSchedule[3].shema}
                      </p>
                   </div>
-                  <a class="shops-item__phone" href="${SHOPS_LINK_PHONE_ODESA}">
+                  <a class="shops-item__phone hoverable" href="${SHOPS_LINK_PHONE_ODESA}">
                      ${shopsPage.shopsPhone[3]}
                   </a>
                   <img class="shops-item__img" src="${SHOPS_ODESA}"/>

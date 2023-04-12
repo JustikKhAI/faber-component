@@ -20,6 +20,7 @@ window.addEventListener("load", function () {
    spinnerPage.handleClear();
    
 });
+checkTouchDevice();
 window.addEventListener("resize", function () {
    headerPage.render();
    mainPage.render();

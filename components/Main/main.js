@@ -10,22 +10,7 @@ class Main {
          "Сотні відгуків",
       ];
       this.mainBtn = "до каталогу";
-      // всі розміри фото додаю для оптимізації трафіка
-      this.chooseMainFoto = function (value) {
-         let result;
-         if (value >= 1200) {
-            result = MAIN_FOTO1200;
-         } else if (value >= 992) {
-            result = MAIN_FOTO992;
-         } else if (value >= 768) {
-            result = MAIN_FOTO768;
-         } else if (value >= 560) {
-            result = MAIN_FOTO560;
-         } else if (value >= 320) {
-            result = MAIN_FOTO320;
-         }
-         return result;
-      }
+      
    }
 
    render() {
@@ -33,18 +18,18 @@ class Main {
          <div class="main-container">
             <div class="main-descr">
                <div class="main-descr__title">
-                  ${mainPage.mainDescrTitle}
+                  ${this.mainDescrTitle}
                </div>
                <ul class="main-descr__list">
-                  <li class="main-descr__item">${mainPage.mainListItems[0]}</li>
-                  <li class="main-descr__item">${mainPage.mainListItems[1]}</li>
-                  <li class="main-descr__item">${mainPage.mainListItems[2]}</li>
-                  <li class="main-descr__item">${mainPage.mainListItems[3]}</li>
-                  <li class="main-descr__item">${mainPage.mainListItems[4]}</li>
-                  <li class="main-descr__item">${mainPage.mainListItems[5]}</li>
+                  <li class="main-descr__item">${this.mainListItems[0]}</li>
+                  <li class="main-descr__item">${this.mainListItems[1]}</li>
+                  <li class="main-descr__item">${this.mainListItems[2]}</li>
+                  <li class="main-descr__item">${this.mainListItems[3]}</li>
+                  <li class="main-descr__item">${this.mainListItems[4]}</li>
+                  <li class="main-descr__item">${this.mainListItems[5]}</li>
 
                </ul>
-               <a class="main-descr__btn" href="${LINK_TO_CTLG}">${mainPage.mainBtn}</a>
+               <a class="main-descr__btn hoverable" href="${LINK_TO_CTLG}">${this.mainBtn}</a>
             </div>
             <img class="main-foto__img" src="${createWayFoto(MAIN_FOTO)}"/>
          </div>

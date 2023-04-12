@@ -26,6 +26,8 @@ window.addEventListener("load", function () {
    document.removeEventListener("DOMContentLoaded", spinnerHandle);
    spinnerPage.handleClear();
 });
+checkTouchDevice();
+
 window.addEventListener("resize", function () {
    headerPage.render();
    // catalogPage.render();

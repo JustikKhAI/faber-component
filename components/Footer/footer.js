@@ -34,12 +34,12 @@ class Footer {
       ];
 
       for (let i = 0; i < 5; i++) {
-         links[i].className = "f-text-link";
+         links[i].classList.add("f-text-link", "hoverable");
          links[i].innerText = this.links[i];
          links[i].href = this.linkValues[i];
       }
 
-      links[5].className = "f-facebook-link";
+      links[5].classList.add("f-facebook-link", "hoverable");
       links[5].href = this.linkValues[5];
       links[5].target = "_blank";
       links[5].onmouseover = function () {
@@ -74,7 +74,7 @@ class Footer {
 
       links[5].append(fbImg, fbQR);
 
-      links[6].className = "f-insta-link";
+      links[6].classList.add("f-insta-link", "hoverable");
       links[6].href = this.linkValues[6];
       links[6].target = "_blank";
       links[6].onmouseover = function () {

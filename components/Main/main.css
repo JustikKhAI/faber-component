@@ -58,6 +58,10 @@
    box-shadow: var(--shadow);
    cursor: pointer;
 }
+#main .hoverable:hover{
+   background-color: transparent;
+   background: linear-gradient(to bottom, var(--color-corp), rgb(0,108,110));
+}
 .main-foto__img {
    margin: 40px 0;
    width: 600px;

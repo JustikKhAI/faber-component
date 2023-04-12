@@ -126,7 +126,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactBrovary.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_BROVARY}" class="phone-number">${contactBrovary.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_BROVARY}" class="phone-number hoverable">${contactBrovary.phoneNumber}</a>
                </div>
             </div>
             <div class="contacts-item">
@@ -139,7 +139,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactBoryspil.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_BORYSPIL}" class="phone-number">${contactBoryspil.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_BORYSPIL}" class="phone-number hoverable">${contactBoryspil.phoneNumber}</a>
                </div>
             </div><div class="contacts-item">
                <p class="cont-item__title">${contactKyiv.title}</p>
@@ -151,7 +151,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactKyiv.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_KYIV}" class="phone-number">${contactKyiv.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_KYIV}" class="phone-number hoverable">${contactKyiv.phoneNumber}</a>
                </div>
             </div><div class="contacts-item">
                <p class="cont-item__title">${contactOdesa.title}</p>
@@ -163,7 +163,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactOdesa.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_ODESA}" class="phone-number">${contactOdesa.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_ODESA}" class="phone-number hoverable">${contactOdesa.phoneNumber}</a>
                </div>
             </div><div class="contacts-item">
                <p class="cont-item__title">${contactOdesa1.title}</p>
@@ -175,7 +175,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactOdesa1.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_ODESA1}" class="phone-number">${contactOdesa1.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_ODESA1}" class="phone-number hoverable">${contactOdesa1.phoneNumber}</a>
                </div>
             </div><div class="contacts-item">
                <p class="cont-item__title">${contactOdesa2.title}</p>
@@ -188,8 +188,8 @@ class Contacts {
                <div class="cont-item-phone__block">
                   <img src="${contactOdesa2.phoneImg}" alt="" class="phone-img">
                   <p class="phone-number">
-                     <a href="${CONTACTS_LINK_PHONE_ODESA21}">${contactOdesa2.phoneNumber[0]}</a>
-                     <a href="${CONTACTS_LINK_PHONE_ODESA22}">${contactOdesa2.phoneNumber[1]}</a>
+                     <a class="hoverable" href="${CONTACTS_LINK_PHONE_ODESA21}">${contactOdesa2.phoneNumber[0]}</a>
+                     <a class="hoverable" href="${CONTACTS_LINK_PHONE_ODESA22}">${contactOdesa2.phoneNumber[1]}</a>
                   </p>
                </div>
             </div><div class="contacts-item">
@@ -203,8 +203,8 @@ class Contacts {
                <div class="cont-item-phone__block">
                   <img src="${contactOdesa3.phoneImg}" alt="" class="phone-img">
                   <p class="phone-number">
-                     <a href="${CONTACTS_LINK_PHONE_ODESA31}">${contactOdesa3.phoneNumber[0]}</a>
-                     <a href="${CONTACTS_LINK_PHONE_ODESA32}">${contactOdesa3.phoneNumber[1]}</a>
+                     <a class="hoverable" href="${CONTACTS_LINK_PHONE_ODESA31}">${contactOdesa3.phoneNumber[0]}</a>
+                     <a class="hoverable" href="${CONTACTS_LINK_PHONE_ODESA32}">${contactOdesa3.phoneNumber[1]}</a>
                   </p>
                </div>
             </div><div class="contacts-item production-tile">
@@ -217,7 +217,7 @@ class Contacts {
                </div>
                <div class="cont-item-phone__block">
                   <img src="${contactProduction.phoneImg}" alt="" class="phone-img">
-                  <a href="${CONTACTS_LINK_PHONE_PRODUCTION}" class="phone-number">${contactProduction.phoneNumber}</a>
+                  <a href="${CONTACTS_LINK_PHONE_PRODUCTION}" class="phone-number  hoverable">${contactProduction.phoneNumber}</a>
                </div>
             </div>
          </div>

@@ -63,3 +63,13 @@ function createWayFoto(basicWay) {
    }
    return result;
 }
+function checkTouchDevice() {
+   const isTouchDevice =
+      "ontouchstart" in window ||
+      navigator.maxTouchPoints > 0 ||
+      navigator.msMaxTouchPoints > 0;
+   const elements = document.querySelectorAll(".hoverable");
+   if (isTouchDevice) {
+      elements.forEach(item => item.classList.remove("hoverable"));
+   }
+}

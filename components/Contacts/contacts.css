@@ -74,7 +74,7 @@
    font-size: 15px;
    line-height: 1.5;
 }
-.phone-number:hover {
+#contacts .hoverable:hover {
    text-decoration: underline;
 }
 .production-tile .cont-item__shedule {
