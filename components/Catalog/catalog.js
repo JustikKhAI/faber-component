@@ -51,11 +51,7 @@ class Product {
    }
    buildProduct() {
       let catalogItem = document.createElement("div");
-      catalogItem.classList.add(
-         "catalog-item",
-         this.sexClass(),
-         this.seasonClass()
-      );
+      catalogItem.classList.add("catalog-item", this.sexClass(), this.seasonClass());
       catalogItem.id = `prod-${this.articul}`;
 
 
