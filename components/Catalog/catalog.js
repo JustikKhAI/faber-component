@@ -91,7 +91,7 @@ class Product {
          "c-item__action",
          getActionSale(this.price, this.sale)
       );
-      itemAction.innerText = `${this.sale.toLocaleString("ru-RU")} ₴`;
+      itemAction.innerText = `${this.sale.toLocaleString("ru-RU")} грн`;
 
       let itemPriceElem = document.createElement("div");
       itemPriceElem.className = "c-item-price__elem";
@@ -108,7 +108,7 @@ class Product {
          "c-item__price",
          getActionPrice(this.price, this.sale)
       );
-      itemPrice.innerText = `${this.price.toLocaleString("ru-RU")} ₴`;
+      itemPrice.innerText = `${this.price.toLocaleString("ru-RU")} грн`;
 
       itemPriceElem.append(itemPriceImg, itemPrice);
       itemPriceBlock.append(itemAction, itemPriceElem);
