@@ -43,8 +43,10 @@ class Footer {
       links[5].href = this.linkValues[5];
       links[5].target = "_blank";
       links[5].onmouseover = function () {
-         let qrBlock = document.getElementById("fbqr");
-         qrBlock.classList.add("show-qr");
+         if (!checkTouchFooter()) {
+            let qrBlock = document.getElementById("fbqr");
+            qrBlock.classList.add("show-qr");
+         }
       };
       links[5].onmouseout = function () {
          let qrBlock = document.getElementById("fbqr");
@@ -78,8 +80,10 @@ class Footer {
       links[6].href = this.linkValues[6];
       links[6].target = "_blank";
       links[6].onmouseover = function () {
-         let qrBlock = document.getElementById("instaqr");
-         qrBlock.classList.add("show-qr");
+         if (!checkTouchFooter()) {
+            let qrBlock = document.getElementById("instaqr");
+            qrBlock.classList.add("show-qr");
+         }
       };
       links[6].onmouseout = function () {
          let qrBlock = document.getElementById("instaqr");
