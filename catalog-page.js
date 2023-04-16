@@ -30,7 +30,5 @@ checkTouchDevice();
 
 window.addEventListener("resize", function () {
    headerPage.render();
-   // catalogPage.render();
-   // contactsPage.render();
 });
 ROOT_CAT_FILTER.addEventListener("click", filterHandler);

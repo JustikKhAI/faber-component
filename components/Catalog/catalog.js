@@ -50,10 +50,14 @@ class Product {
       };
    }
    buildProduct() {
+      
       let catalogItem = document.createElement("div");
+      if (this.articul == "") {
+         catalogItem.id = "emptyElement"
+         return catalogItem;
+      }
       catalogItem.classList.add("catalog-item", this.sexClass(), this.seasonClass());
-      catalogItem.id = `prod-${this.articul}`;
-
+      catalogItem.id = `prod_${this.articul}`;
 
       let itemImg = document.createElement("img");
       itemImg.className = "c-item__img";
@@ -62,6 +66,9 @@ class Product {
       let itemName = document.createElement("p");
       itemName.className = "c-item__name";
       itemName.innerText = this.name;
+
+      let itemDescr = document.createElement("div");
+      itemDescr.className = "c-item-descr";
 
       let itemColor = document.createElement("p");
       itemColor.className = "c-item__color";
@@ -79,13 +86,18 @@ class Product {
       itemInside.className = "c-item__inside";
       itemInside.innerHTML = `<span>Матеріал в середині: </span>${this.inside.toLowerCase()}`;
 
+      itemDescr.append(itemColor, itemSeason, itemOutside, itemInside);
+
+      let itemSizePriceArt = document.createElement("div");
+      itemSizePriceArt.className = "c-item-spa-block";
+
       let itemSize = document.createElement("div");
       itemSize.className = "c-item__size";
       itemSize.innerHTML = this.sexSizes();
 
       let itemPriceBlock = document.createElement("div");
       itemPriceBlock.className = "c-item-price__block";
-      
+
       let itemAction = document.createElement("p");
       itemAction.classList.add(
          "c-item__action",
@@ -123,39 +135,33 @@ class Product {
       // let itemArtButton = document.createElement("div");
       // itemArtButton.className = "art__button";
       // itemArtButton.onclick = (event) => {
-         
+
       //       // const text = this.articul;
       //       navigator.clipboard.writeText(this.articul);
       //       itemArticul.classList.add('copied');
       //       setTimeout(function () {
       //       itemArticul.classList.remove("copied");
-               
+
       //       },1500)
       //       console.log("Текст був успішно скопійований в буфер обміну");
-         
+
       // };
 
-
-      let itemArtBtnImg = document.createElement("img");
-      itemArtBtnImg.className = "art__img";
-      itemArtBtnImg.src = CATALOG_COPY;
+      // let itemArtBtnImg = document.createElement("img");
+      // itemArtBtnImg.className = "art__img";
+      // itemArtBtnImg.src = CATALOG_COPY;
 
       // itemArtButton.appendChild(itemArtBtnImg);
-      itemArticul.append(itemArtText/*, itemArtButton*/);
+      itemArticul.append(itemArtText /*, itemArtButton*/);
+      itemSizePriceArt.append(itemSize,itemPriceBlock,itemArticul);
 
       catalogItem.append(
          itemImg,
          itemName,
-         itemColor,
-         itemSeason,
-         itemOutside,
-         itemInside,
-         itemSize,
-         itemPriceBlock,
-         itemArticul
+         itemDescr,
+         itemSizePriceArt
       );
       return catalogItem;
-
    }
 }
 
@@ -172,17 +178,23 @@ class Catalog {
 
       this.products.forEach((product) => {
          let tmp = product.buildProduct();
-         htmlCat.appendChild(tmp);
+         if (tmp.id != "emptyElement") {
+            htmlCat.appendChild(tmp);
+         }            
+         
       });
       ROOT_CATALOG.appendChild(htmlCat);
    }
 
    generateProducts(data) {
       this.products = data.map((productData) => new Product(productData));
+      for (let i = 0; i < this.products.length; i++) {
+         if (this.products[i].articul == "") {
+            this.products.pop(this.products[i]);
+         };
+         
+      }
    }
 }
 
 const catalogPage = new Catalog();
-
-
-

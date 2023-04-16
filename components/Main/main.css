@@ -52,9 +52,10 @@
    border-radius: var(--border-radius-medium);
    color: var(--color-white);
    text-transform: uppercase;
-   font-weight: 500;
+   font-weight: 700;
    font-size: 18px;
    line-height: 1.3;
+   letter-spacing: 1px;
    box-shadow: var(--shadow);
    cursor: pointer;
 }
@@ -126,7 +127,7 @@
    }
    .main-descr__btn {
       padding: var(--spacing-small) 50px;
-      font-weight: 600;
+      font-weight: 700;
    }
    .main-foto__img {
       order: 0;
@@ -175,7 +176,7 @@
    }
    .main-descr__btn {
       padding: var(--spacing-small) 50px;
-      font-weight: 600;
+      font-weight: 700;
    }
    .main-foto__img {
       order: 0;
@@ -226,7 +227,7 @@
    }
    .main-descr__btn {
       padding: var(--spacing-small) 50px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 16px;
    }
    .main-foto__img {

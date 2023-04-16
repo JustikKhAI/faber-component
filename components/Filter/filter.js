@@ -68,7 +68,7 @@ function filterHandler(event) {
          }
       }
       catalogPage.products.map((item) => {
-         let elem = document.getElementById(`prod-${item.articul}`);
+         let elem = document.getElementById(`prod_${item.articul}`);
          if (
             (activeSexFilters.length === 0 ||
                activeSexFilters.includes(item.sexClass())) &&

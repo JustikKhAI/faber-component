@@ -28,58 +28,44 @@
    position: relative;
 }
 .show-item {
-   display: initial;
+   display: flex;
 }
 .hide-item {
    display: none;
 }
 
 .c-item__img {
-   background-color: #0cc;
-   height: 200px;
+   background-color: var(--color-header-border);
+   max-height: 180px;
    width: 100%;
 }
 .c-item__name {
-   margin: 10px 0;
+   margin: 5px 0;
    font-size: 18px;
    font-weight: 600;
    line-height: 1.5;
 }
-.c-item__color {
-   margin-bottom: 5px;
+.c-item-descr{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   height: 120px;
+}
+.c-item-descr p {
+   margin:0;
    font-size: 15px;
    font-weight: 500;
-   line-height: 1.33;
+   line-height: 20px;
+   
 }
-.c-item__color span {
+.c-item-descr span {
    font-weight: 400;
 }
-.c-item__season {
-   margin-bottom: 5px;
-   font-size: 15px;
-   font-weight: 500;
-   line-height: 1.33;
-}
-.c-item__season span {
-   font-weight: 400;
-}
-.c-item__outside {
-   margin-bottom: 5px;
-   font-size: 15px;
-   font-weight: 500;
-   line-height: 1.33;
-}
-.c-item__outside span {
-   font-weight: 400;
-}
-.c-item__inside {
-   margin-bottom: 5px;
-   font-size: 15px;
-   font-weight: 500;
-   line-height: 1.33;
-}
-.c-item__inside span {
-   font-weight: 400;
+
+.c-item-spa-block{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
 }
 .c-item__size {
    display: flex;
