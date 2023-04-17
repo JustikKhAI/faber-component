@@ -160,14 +160,14 @@
       font-size: 24px;
    }
    .cont-item__title {
-      font-size: calc((100vw - 15px) / 22);
+      font-size: calc((100vw - 15px) / 23);
       letter-spacing: -0.5px;
    }
    .cont-item__subtitle {
       font-size: calc((100vw - 15px) / 28);
    }
    .cont-item__address {
-      font-size: calc((100vw - 15px) / 28);
+      font-size: calc((100vw - 15px) / 29);
    }
    .cont-item__shedule {
       font-size: calc((100vw - 15px) / 30);
