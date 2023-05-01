@@ -1,0 +1,109 @@
+#filter {
+   display: flex;
+   justify-content: center;
+   background-color: var(--color-white);
+   user-select: none;
+   cursor: pointer;
+   border-top: 2px solid var(--color-header-border);
+}
+.filter-block {
+   display: flex;
+   flex-direction: column;
+   width: 1200px;
+   padding: 0 20px;
+   align-items: stretch;
+   margin-top: 20px;
+}
+.filter-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+.filter-item {
+   display: flex;
+   justify-content: center;
+   background-color: var(--color-white);
+}
+.filter-item li {
+   flex: 1 1 auto;
+   border: 2px solid transparent;
+   font-size: 18px;
+   line-height: 1.5;
+   padding: 10px;
+   text-align: center;
+   font-weight: 500;
+   background-color: var(--color-guarantee-summary);
+   border-radius: 20px;
+}
+.filter-item li:not(:last-child) {
+   margin-right: 10px;
+}
+.filter-item .hoverable:hover {
+   border: 2px solid var(--color-corp);
+}
+.sex-filter {
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.season-filter {
+   text-transform: lowercase;
+}
+.season-filter::first-letter {
+   text-transform: uppercase;
+}
+
+li.active-filter {
+   background-color: var(--color-corp);
+   font-weight: 700;
+   color: var(--color-white);
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.99px) {
+   .filter-block {
+      width: 992px;
+   }
+   .filter-item li {
+      font-size: calc((100vw - 300px) / 125 + 12px);
+      line-height: 1;
+      padding: calc((100vw - 300px) / 125 + 3px);
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.99px) {
+   .filter-item li {
+      font-size: calc((100vw - 300px) / 125 + 12px);
+      line-height: 1;
+      padding: calc((100vw - 300px) / 125 + 3px);
+   }
+}
+@media only screen and (min-width: 560px) and (max-width: 767.99px) {
+   .filter-item li {
+      font-size: calc((100vw - 300px) / 125 + 12px);
+      line-height: 1;
+      padding: 10px;
+   }
+}
+@media only screen and (min-width: 320px) and (max-width: 559.99px) {
+   .filter-block {
+      display: flex;
+      flex-direction: column;
+      width: 560px;
+      padding: 0 5px;
+      align-items: stretch;
+      margin-top: 10px;
+   }
+   .filter-container {
+      gap: 5px;
+   }
+
+   .filter-item li {
+      font-size: 12px;
+      line-height: 1.2;
+      padding: 10px;
+   }
+   .filter-item li:not(:last-child) {
+   margin-right: 5px;
+}
+.sex-filter {
+   text-transform: uppercase;
+   margin-bottom: 5px;
+}
+}
